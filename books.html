@@ -8,20 +8,23 @@
 div.gallery{
 margin-top:90px;
   float: right;
- 
   width: 33.3%;
 }
 .gallery:hover {
 opacity:0.7;
 transform: rotate(360deg);
 }
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
+.middle {
   transition: .5s ease;
-  backface-visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.gallery:hover .middle {
+  opacity: 1;
 }
 .text {
 	background-color:#000000;
@@ -165,9 +168,9 @@ transform: rotate(360deg);
 	
 	קישורים מומלצים לקניית ספרים
 	<div id="reshatot">
-		<a href="https://rebooks.org.il/?he_IL" target="_blank" style="text-decoration:none"> <img src="images/rebooks.jpg" width="30" height="30" alt="לוגו פייסבוק">  </a>
-		<a href="https://www.e-vrit.co.il/" target="_blank" style="text-decoration:none"> <img src="images/evrit.png" width="30" height="30" alt="לוגו אינסטגרם"> </a>
-		<a href="https://indiebook.co.il/" target="_blank" style="text-decoration:none"> <img src="images/indi.png" width="30" height="30" alt="לוגו יוטיוב"> </a>
+		<a href="https://rebooks.org.il/?he_IL" target="_blank" style="text-decoration:none"> <img src="images/rebooks.jpg" width="50" height="50" alt="לוגו פייסבוק">  </a>
+		<a href="https://www.e-vrit.co.il/" target="_blank" style="text-decoration:none"> <img src="images/evrit.png" width="50" height="50" alt="לוגו אינסטגרם"> </a>
+		<a href="https://indiebook.co.il/" target="_blank" style="text-decoration:none"> <img src="images/indi.png" width="50" height="50" alt="לוגו יוטיוב"> </a>
 	</div>
 	</footer>
 
